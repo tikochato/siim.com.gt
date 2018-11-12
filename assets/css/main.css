@@ -1308,7 +1308,7 @@ a:hover {
 }
 
 strong, b {
-  color: #555;
+  color: #cfcfcf;
   font-weight: 600;
 }
 
@@ -2260,7 +2260,6 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 0;
   font-size: 1em;
 }
 
@@ -2482,7 +2481,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #banner p {
   font-size: 1em;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 1.75em;
 }
 
@@ -2609,7 +2608,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #footer h3 {
   color: #FFF;
-  margin-bottom: 2em !important;
+  margin-bottom: 1em !important;
 }
 
 #footer label {
@@ -2671,4 +2670,54 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   border: 0;
   display: inline-block;
   position: relative;
+}
+
+/* Iconos contacto */
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1.65em 0 0;
+}
+
+ul.icons li:last-child {
+  padding-right: 0 !important;
+}
+
+a.icon {
+  color: white;
+  font-size: 8pt;
+}
+
+/* nav alt */
+
+#navinner.alt {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#logo.alt {
+  left: 12em;
+}
+
+#nav.alt {
+  position: fixed;
+  top: 0;
+  padding: 0.2em 11em;
+  width: 100%;
+  background: #6cc091;
+  height: 44px;
+  line-height: 35px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 10000;
+}
+
+#nav.alt a {
+  font-size: 0.9em;
 }
