@@ -2751,3 +2751,9 @@ strong.titulo {
     color: #555;
     font-weight: 600;
 }
+
+.footerTY {
+  color: rgba(255, 255, 255, 0.5); 
+  text-decoration: none; 
+  text-align: center;
+}
