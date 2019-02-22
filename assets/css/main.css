@@ -1325,7 +1325,6 @@ a:hover {
 }
 
 strong, b {
-  color: #cfcfcf;
   font-weight: 600;
 }
 
@@ -2688,6 +2687,15 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 }
 
 /* Iconos contacto */
+
+ul.contact {
+  cursor: default;
+  list-style: none;
+}
+
+ul.contact li {
+  padding: 0 1.65em 0 0;
+}
 
 ul.icons {
   cursor: default;
