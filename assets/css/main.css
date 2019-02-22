@@ -2688,6 +2688,12 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 /* Iconos contacto */
 
+.acontacto{
+  color: white;
+  text-decoration: none;
+  border-bottom: none;
+}
+
 ul.contact {
   cursor: default;
   list-style: none;
