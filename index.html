@@ -21,9 +21,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="assets/css/pgwslideshow.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<script type="text/javascript">
+		function displayNextImage() {
+			console.log("next image");
+			x = (x === images.length - 1) ? 0 : x + 1;
+			console.log(document.getElementById("logo"));
+			document.getElementById("logo").src = images[x];
+		}
+
+		function displayPreviousImage() {
+			x = (x <= 0) ? images.length - 1 : x - 1;
+			document.getElementById("logo").src = images[x];
+		}
+
+		function startTimer() {
+			console.log("start");
+			setInterval(displayNextImage, 5000);
+		}
+
+		var images = [], x = -1;
+		images[0] = "images/1.jpeg";
+		images[1] = "images/2.jpeg";
+		images[2] = "images/3.jpeg";
+		images[3] = "images/4.png";
+		images[4] = "images/siim.png";
+	</script>
+
 </head>
 
-<body>
+<body onload="startTimer()">
 
 	<script type="application/ld+json">
 		{
@@ -99,7 +126,7 @@
 	<header id="header">
 		<div id="navinner" class="inner">
 			<nav id="nav">
-				<a href="#banner" class="logo" id="logo"><strong>Tel.</strong> (+502) 5575-1688 / (+502) 5715-4551</a>
+				<a href="#banner" class="logo"><strong>Tel.</strong> (+502) 5575-1688 / (+502) 5715-4551</a>
 				<a href="#agua">Bombas de Agua</a>
 				<a href="#pozos">Pozos</a>
 				<a href="#electrica">Electricidad</a>
@@ -114,7 +141,7 @@
 	<section id="banner">
 		<div class="inner">
 			<header>
-				<span class="image avatar"><img src="images/siim.png" alt="" /></span>
+				<span class="image avatar"><img src="images/siim.png" alt="siim"  id="logo" /></span>
 			</header>
 
 			<div class="flex row">
