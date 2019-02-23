@@ -1626,10 +1626,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #26c6da;
+  background: #222e58;
   border-radius: 10px;
   border: none;
-  border: solid 2px #8dcca9;
+  border: solid 2px #26c6da;
   color: #fff;
   display: block;
   outline: 0;
@@ -2195,11 +2195,11 @@ input[type="submit"].alt, input[type="reset"].alt, input[type="button"].alt, but
 }
 
 input[type="submit"].alt:hover, input[type="reset"].alt:hover, input[type="button"].alt:hover, button.alt:hover, .button.alt:hover {
-  background-color: #7ec89e;
+  background-color: #26c6da;
 }
 
 input[type="submit"].alt:active, input[type="reset"].alt:active, input[type="button"].alt:active, button.alt:active, .button.alt:active {
-  background-color: #7ec89e;
+  background-color: #26c6da;
 }
 
 input[type="submit"].alt.icon:before, input[type="reset"].alt.icon:before, input[type="button"].alt.icon:before, button.alt.icon:before, .button.alt.icon:before {
@@ -2491,7 +2491,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #banner .icon {
   color: #26c6da;
-  font-size: 2em;
+  font-size: 5em;
 }
 
 #banner p {
@@ -2616,7 +2616,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #footer {
   padding: 6em 0;
-  background: #26c6da;
+  background: #222e58;
   color: #fff;
   text-align: center;
 }
@@ -2735,7 +2735,7 @@ a.icon {
   top: 0;
   padding: 0.2em 11em;
   width: 100%;
-  background: #26c6da;
+  background: #222e58;
   height: 44px;
   line-height: 35px;
   border-top-left-radius: 0;
