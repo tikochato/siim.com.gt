@@ -1603,12 +1603,26 @@ form .field.half.first {
   margin-right: 3%;
 }
 
+form .field.third {
+  display: inline-block;
+  width: 30%;
+  margin-right: 2%;
+}
+
 @media screen and (max-width: 980px) {
   form .field.half {
     display: block;
     width: 100%;
   }
   form .field.half.first {
+    margin-right: 0;
+  }
+
+  form .field.third {
+    display: block;
+    width: 100%;
+  }
+  form .field.third.first {
     margin-right: 0;
   }
 }
