@@ -40,7 +40,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
+  background-image: url('../../images/bk.jpg');
   line-height: 1;
+}
+
+#main {
+  background: #fff;
 }
 
 ol, ul {
@@ -1260,10 +1265,6 @@ body {
   }
 }
 
-body {
-  background: #fff;
-}
-
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
   -moz-animation: none !important;
   -webkit-animation: none !important;
@@ -1316,7 +1317,7 @@ body, input, select, textarea {
 }
 
 a {
-  color: #26c6da;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -1536,6 +1537,12 @@ header h4+p, header h5+p, header h6+p {
   margin-top: -0.6em;
 }
 
+header h4 {
+  color: #fff;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
 /* Flex */
 
 .flex {
@@ -1640,11 +1647,11 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #222e58;
+  background: #fff;
   border-radius: 10px;
   border: none;
   border: solid 2px #26c6da;
-  color: #fff;
+  color: #514e4e;
   display: block;
   outline: 0;
   padding: 0 1em;
@@ -1772,27 +1779,27 @@ input[type="radio"]+label:before {
 }
 
 ::-webkit-input-placeholder {
-  color: #c4e5d3 !important;
+  color: #9f9a9a !important;
   opacity: 1.0;
 }
 
 :-moz-placeholder {
-  color: #c4e5d3 !important;
+  color: #9f9a9a !important;
   opacity: 1.0;
 }
 
 ::-moz-placeholder {
-  color: #c4e5d3 !important;
+  color: #9f9a9a !important;
   opacity: 1.0;
 }
 
 :-ms-input-placeholder {
-  color: #c4e5d3 !important;
+  color: #9f9a9a !important;
   opacity: 1.0;
 }
 
 .formerize-placeholder {
-  color: #c4e5d3 !important;
+  color: #9f9a9a !important;
   opacity: 1.0;
 }
 
@@ -2154,8 +2161,8 @@ input[type="submit"], input[type="reset"], input[type="button"], button, .button
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   background-color: transparent;
-  box-shadow: inset 0 0 0 3px #26c6da;
-  color: #26c6da !important;
+  box-shadow: inset 0 0 0 3px #fff;
+  color: #fff !important;
   border-radius: 30px;
   border: 0;
   cursor: pointer;
@@ -2285,7 +2292,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
   display: inline-block;
   font-weight: 400;
   height: inherit;
-  left: 0;
+  left: 10px;
   line-height: inherit;
   margin: 0;
   padding: 0;
@@ -2461,7 +2468,7 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 /* Banner */
 
 #banner {
-  padding: 5em 0 9em 0;
+  padding: 5em 0 5em 0;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
@@ -2472,7 +2479,6 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #banner:before {
   content: '';
-  background: #222e58;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2630,7 +2636,6 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 
 #footer {
   padding: 6em 0;
-  background: #222e58;
   color: #fff;
   text-align: center;
 }
@@ -2681,7 +2686,6 @@ input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"
 /* Logo image */
 
 .image.avatar img {
-  border-radius: 35%;
   display: block;
   width: 100%;
   display: block;
@@ -2730,7 +2734,7 @@ ul.icons li:last-child {
 
 a.icon {
   color: white;
-  font-size: 8pt;
+  font-size: 12pt;
 }
 
 /* nav alt */
@@ -2747,10 +2751,10 @@ a.icon {
 #nav.alt {
   position: fixed;
   top: 0;
-  padding: 0.2em 11em;
+  padding: 1em 11em;
   width: 100%;
   background: #222e58;
-  height: 44px;
+  height: 4em;
   line-height: 35px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -2770,4 +2774,76 @@ strong.titulo {
   color: rgba(255, 255, 255, 0.5); 
   text-decoration: none; 
   text-align: center;
+}
+
+/* Servicios */
+.columns .icon {
+  color: #26c6da;
+  font-size: 3em;
+}
+
+.columns header {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2em !important;
+}
+
+.columns p {
+  font-size: 1em;
+  margin-bottom: 1.75em;
+  text-align: left;
+  margin-left: 6em !important;
+}
+
+.columns .flex {
+  -ms-flex-pack: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 4em auto;
+}
+.columns .flex div p {
+  margin: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .columns {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .columns .flex {
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto 2em auto;
+  }
+  .columns .flex div {
+    font-size: .85em;
+    padding: 0;
+    border: none;
+    margin-bottom: 1em;
+  }
+}
+
+/* Whatsapp button */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.button-float{
+	margin-top:10px;
 }
