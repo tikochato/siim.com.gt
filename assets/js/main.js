@@ -110,7 +110,6 @@
       side: 'left'
     });
 
-
     // Fix: Remove transitions on WP<10 (poor/buggy performance).
     if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
       $('#navPanel').css('transition', 'none');
@@ -135,3 +134,9 @@ setInterval(function () {
 		.end()
 		.appendTo('#slideshow');
 }, 3000);
+
+// Update bk-image
+const urlParams = new URLSearchParams(window.location.search);
+const bkImage = urlParams.get('bk') ?? "";
+const bkImagePath = `url(./images/bk${bkImage}.jpg)`;
+document.getElementById("body").style.backgroundImage = bkImagePath;

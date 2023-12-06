@@ -40,8 +40,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background-image: url('../../images/bk.jpg');
   line-height: 1;
+  background-size:contain;
 }
 
 #main {
