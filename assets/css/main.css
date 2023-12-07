@@ -41,7 +41,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  background-image: url(../../images/bk.jpg);
   background-size:contain;
+  backdrop-filter: blur(3px);
 }
 
 #main {

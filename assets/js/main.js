@@ -135,8 +135,8 @@ setInterval(function () {
 		.appendTo('#slideshow');
 }, 3000);
 
-// Update bk-image
-const urlParams = new URLSearchParams(window.location.search);
-const bkImage = urlParams.get('bk') ?? "";
-const bkImagePath = `url(./images/bk${bkImage}.jpg)`;
-document.getElementById("body").style.backgroundImage = bkImagePath;
+// // Update bk-image
+// const urlParams = new URLSearchParams(window.location.search);
+// const bkImage = urlParams.get('bk') ?? "";
+// const bkImagePath = `url(./images/bk${bkImage}.jpg)`;
+// document.getElementById("body").style.backgroundImage = bkImagePath;
